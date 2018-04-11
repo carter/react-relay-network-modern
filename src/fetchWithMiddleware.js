@@ -3,6 +3,7 @@
 
 import { createRequestError } from './createRequestError';
 import RelayResponse from './RelayResponse';
+import fetch from './legacyFetch'
 import type { Middleware, MiddlewareNextFn, RelayRequestAny } from './definition';
 
 async function runFetch(req: RelayRequestAny): Promise<RelayResponse> {
